@@ -1,0 +1,20 @@
+# Ignore everything by default
+*
+.*
+
+# Whitelist project files
+!chatbot.py
+!chatbot.ipynb
+!requirements.txt
+!README.md
+!.env.example
+!.gitignore
+!.streamlit/
+!.streamlit/config.toml
+
+# Explicitly ensure secrets & cache are never tracked
+.env
+.env.local
+*.py[cod]
+__pycache__/
+.ipynb_checkpoints/
