@@ -1,20 +1,21 @@
-# Ignore everything by default
-*
-.*
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
 
-# Whitelist project files
-!chatbot.py
-!chatbot.ipynb
-!requirements.txt
-!README.md
-!.env.example
-!.gitignore
-!.streamlit/
-!.streamlit/config.toml
-
-# Explicitly ensure secrets & cache are never tracked
+# Environment and sensitive credentials
 .env
 .env.local
-*.py[cod]
-__pycache__/
-.ipynb_checkpoints/
+.env.*.local
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
